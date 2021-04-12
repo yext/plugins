@@ -3,10 +3,7 @@
  * logic to the crawled page to extract a company description and
  * twitter handle from Sequoia's company pages.
  */
-
-import { IngestURLEvent } from "https://deno.land/x/yext_plugins@0.2/ingest/url.ts";
-
-// Import Cheerio to select data out of the page HTML.
+import { IngestURLEvent } from "https://deno.land/x/yext_plugins/ingest/url.ts";
 import { cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
 
 addEventListener(IngestURLEvent.type, function(evt: any) {
