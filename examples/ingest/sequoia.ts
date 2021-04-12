@@ -4,7 +4,7 @@
  * twitter handle from Sequoia's company pages.
  */
 
-import { IngestURLEvent } from "https://deno.land/x/yext-plugins@0.0.1/ingest/url.ts";
+import { IngestURLEvent } from "https://deno.land/x/yext_plugins@0.2/ingest/url.ts";
 
 // Import Cheerio to select data out of the page HTML.
 import { cheerio } from "https://deno.land/x/cheerio@1.0.4/mod.ts";
