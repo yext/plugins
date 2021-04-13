@@ -32,3 +32,4 @@ under `examples/`.
 | Knowledge Graph | `entity_after_save`   | Perform operation after an entity saves succesfully                                                     |
 | Knowledge Graph | `entity_after_delete` | Perform operation after and entity                                                                      |
 | Reviews         | `on_review_creation`  | Called right after a new review is created                                                              |
+| Reviews         | `on_send_invitation`  | Called when a new invitation is meant to be sent                                                        |

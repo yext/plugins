@@ -7,18 +7,18 @@
 import { EventInput } from "../types";
 import { EventOutput } from "./../types";
 
-interface BeforeSaveEventInput extends EventInput {
+interface ValidationEventInput extends EventInput {
   entityId: string;
   entityType: string;
   entityData: object;
 }
-interface BeforeSaveEventOuput extends EventOutput {
-  updatedEntityData: object;
-  skipValidation?: boolean;
+interface ValidationEventOuput extends EventOutput {
+  didValidate: boolean;
+  validationMessage?: string;
 }
 
 export type eventInterface = (
-  input: BeforeSaveEventInput
-) => BeforeSaveEventOuput;
+  input: ValidationEventInput
+) => ValidationEventOuput;
 
-export const eventId = "entity_before_save";
+export const eventId = "entity_validation";
