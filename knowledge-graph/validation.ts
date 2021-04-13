@@ -13,8 +13,8 @@ interface ValidationEventInput extends EventInput {
   entityData: object;
 }
 interface ValidationEventOuput extends EventOutput {
-  didValidate: boolean;
-  validationMessage?: string;
+  didValidate: boolean; //if false the entity will fail to save and display the validation message
+  validationMessage?: string; //displayed to the user if validation fails
 }
 
 export type eventInterface = (
