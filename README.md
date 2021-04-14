@@ -42,3 +42,5 @@ under `examples/`.
 | Answers         | `on_experience_creation`    | Called when an experience is created                                                                    |
 | Answers         | `on_experience_update`      | Called when an experience is updated                                                                    |
 | Answers         | `on_experience_deletion`    | Called when a an experience is deleted                                                                  |
+| Pages           | `on_build_update`           | Called a build is updated                                                                               |
+| Pages           | `on_page_publish`           | Called when a new page is publisherd                                                                    |
